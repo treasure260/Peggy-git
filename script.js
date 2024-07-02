@@ -32,7 +32,7 @@
 
 const containerE = document.querySelector('.container');
 
-const sports = ['Football', 'Basketball', 'Volleyball', 'Table tenis', 'and Swimming.'];
+const sports = ['Football', 'Basketball', 'Volleyball', 'Table tennis', 'and Swimming.'];
 
 let index = 0;
 let characterIndex = 0;
@@ -49,9 +49,10 @@ function generateSports() {
   if(characterIndex === sports[index].length) {
     index++;
     characterIndex = 0;
-
+    // index.color = 'red';
+    
     if(index === sports.length) {
-      // index = 0;
+      index = 0;
     }
 
   }
